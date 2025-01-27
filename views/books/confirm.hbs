@@ -1,0 +1,21 @@
+{{>userheader}}
+
+
+<div class="max-w-sm mt-20 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{users.name}} you are borrwing</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> {{books.title}} with book id:{{books.book_id}} for&emsp;7 days.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <form method="post" action="/confirm">
+    <input type="hidden" name="user_id" value="{{users.user_id}}" readonly>
+    <input type="hidden" name="name" value="{{users.name}}" readonly>
+    <input type="hidden" name="book_id" value="{{books.book_id}}" readonly>
+    <input type="hidden" name="title" value="{{books.title}}" readonly>
+    <button type="submit" onclick="(function() { alert('Dear {{users.name}} now you collect {{books.title}} with book ID:{{books.book_id}} book from Library!!'); return false; })()" >Confirm Borrow</button>
+</form>
+        </a>
+    </div>
+</div>
+
+{{>footer}}

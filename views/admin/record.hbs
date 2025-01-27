@@ -1,0 +1,86 @@
+{{>adminheader}}
+
+
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+         <caption>
+                <h1 class="text-2xl">Availabe Records are:</h1>
+        </caption>
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    S. No.
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    User_id
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Username
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Book ID
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Title
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Issue Date
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Returned
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+                {{#each record}}
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{serial_number}}
+                </th>
+                <td class="px-6 py-4">
+                      {{user_id}}
+                    
+                </td>
+                <td class="px-6 py-4">
+                    {{username}}
+                </td>
+                <td class="px-6 py-4">
+                    {{name}}
+                </td>
+                <td class="px-6 py-4">
+                    {{book_id}}
+                </td>
+                <td class="px-6 py-4">
+                    {{title}}
+                </td>
+                <td class="px-6 py-4">
+                    {{date}}
+                </td>
+                 <td class="px-6 py-4">
+                    <input type="checkbox" onclick="disableCheckbox(this)" name="checkbox" id="ckbox">
+                </td>
+            </tr>
+                {{/each}}
+
+        </tbody>
+    </table>
+</div>
+
+
+                <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                
+
+
+{{>footer}}
+
+
+     

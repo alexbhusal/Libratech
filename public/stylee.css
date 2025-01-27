@@ -1,0 +1,628 @@
+/* body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+* {
+  color: white;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+table {
+  text-align: center;
+  padding: 5px;
+}
+td {
+  padding: 5px;
+  color: black;
+}
+button {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+form input,
+form select {
+  color: black;
+  width: 80%;
+}
+#dlt {
+  background-color: red;
+  border-radius: 20px;
+}
+#dlt a {
+  color: white;
+}
+#edit {
+  background-color: green;
+  border-radius: 15px;
+}
+#edit a {
+  color: white;
+}
+#searchbox {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: transparent;
+  width: 30%;
+}
+#searchbox::placeholder {
+  color: black;
+}
+#srbtn {
+  border-radius: 20px;
+}
+#role {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large;
+}
+
+# for homepage #
+
+.home {
+  background-image: url(./image/home.jpeg);
+  background-size: cover;
+}
+.homme {
+  display: inline-block;
+}
+.home #h11 {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+}
+.home .btn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 2px 0px 1200px;
+}
+.home button {
+  border: 5px solid white;
+  width: 100px;
+  margin: auto;
+  background-color: black;
+}
+.home button b {
+  color: white;
+}
+.home button:hover {
+  cursor: pointer;
+}
+
+# for adminlogin #
+
+ .admin {
+  background-image: url(./image/admin.jpeg);
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+.admin form {
+  box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.2),
+    0 6px 20px 0 rgba(253, 252, 252, 0.19);
+  background-color: white;
+  border-radius: 20px;
+  margin: 100px 500px;
+  padding: 20px;
+  color: black;
+}
+.admin form h1 {
+  color: black;
+}
+.admin form input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.admin #adlog {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+}
+
+# for admin-dashboard #
+
+.admin-dashboard {
+  background-image: url(./image/admin-dashboard.jpeg);
+  background-size: cover;
+}
+.adminheader .menu,
+.mainn {
+  margin: 20px 0 0 700px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.adminheader .menu button,
+.mainn button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: black;
+}
+
+# for addbook #
+
+.addbook {
+  background-image: url(./image/addbook.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.addbook form {
+  box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.2),
+    0 6px 20px 0 rgba(253, 252, 252, 0.19);
+  border-radius: 10px;
+  background-color: white;
+  margin: 30px 500px;
+  padding: 10px;
+}
+.addbook form h1 {
+  color: black;
+}
+.addbook form input,
+.addbook form select {
+  width: calc(90% - 10px);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.addbook form #smt {
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+}
+
+# for managebook #
+.managebook {
+  background-image: url(./image/managebook.jpeg);
+  background-size: cover;
+  margin: 10px 50px;
+}
+
+# for updatebook #
+.updatebook {
+  background-image: url(./image/updatebook.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.updatebook form {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.2),
+    0 6px 20px 0 rgba(253, 252, 252, 0.19);
+  border-radius: 20px;
+  margin: 50px 500px;
+  padding: 10px;
+}
+.updatebook form h1 {
+  color: black;
+  text-align: center;
+}
+.updatebook form input {
+  width: calc(90% - 10px);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.updatebook form label {
+  color: black;
+}
+.updatebook form button {
+  background-color: black;
+  color: white;
+  width: 60%;
+  border-radius: 10px;
+}
+
+# for manageuser #
+.manageuser {
+  background-image: url(./image/manageuser.jpeg);
+  background-size: cover;
+  margin: 20px 30px;
+}
+.manageuser h1 {
+  color: black;
+  margin: 0 400px;
+}
+
+# for update-user #
+.update-user {
+  background-image: url(./image/updateuser.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.update-user form {
+  border: 5px solid white;
+  border-radius: 40px;
+  margin: 50px 500px 100px 500px;
+  padding: 10px;
+  backdrop-filter: blur(20px);
+}
+.update-user form input {
+  width: calc(100% - 10px);
+}
+
+# for record #
+
+.record {
+  background-image: url(./image/record.jpeg);
+  background-size: cover;
+}
+.record h1 {
+  color: black;
+}
+.record #ckbox {
+  width: 30px;
+  height: 30px;
+}
+
+# for userlogin page  #
+.login {
+  background-image: url(./image/login.jpeg);
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+.login h1 {
+  color: black;
+  text-align: center;
+}
+.login form {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin: 80px 500px;
+  padding: 10px;
+}
+.login form #rlogin {
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.login form #dnt {
+  color: black;
+}
+.login form #sgbtn,
+.login form a {
+  color: red;
+  border: none;
+  background-color: white;
+}
+.login form input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.login h2,
+.addbook h2 {
+  color: red;
+}
+.user_wrap .pass-field {
+  position: relative;
+}
+.pass-field #pi {
+  right: 40px;
+  top: 50%;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+# for user register page #
+.register {
+  background-image: url(./image/register.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.register form {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 20px 500px;
+  padding: 10px;
+}
+.register form input,
+select {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid maroon;
+  outline: none;
+}
+.register form h1 {
+  color: black;
+}
+.register form #submit {
+  background-color: brown;
+  width: 60%;
+  border-radius: 12px;
+  color: white;
+}
+.register form #have {
+  color: black;
+}
+.register form #golog {
+  color: brown;
+}
+.wrapper .pass-field {
+  position: relative;
+}
+.pass-field i {
+  right: 55px;
+  top: 50%;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.content {
+  display: none;
+}
+.content .requirement-list {
+  margin: 10px 20px 10px 1px;
+}
+.content .requirement-list #cnt {
+  color: black;
+}
+.requirement-list li {
+  font-size: xx-small;
+  list-style: none;
+  display: inline-block;
+}
+.requirement-list li span {
+  margin-left: 10px;
+  color: red;
+}
+.requirement-list li.valid span {
+  color: rgb(18, 183, 106);
+}
+
+# for user-dashboard #
+.user-dashboard {
+  background-image: url(./image/user-dashboard.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.user-dashboard h1 {
+  font-size: xxx-large;
+  color: black;
+}
+.user-dashboard a {
+  color: white;
+  font-size: larger;
+}
+.user-dashboard #logout {
+  background-color: brown;
+  border-radius: 10px;
+  margin: 10px 100px 0px 1300px;
+}
+.user-dashboard #btna {
+  color: white;
+}
+.user-dashboard #goto {
+  background-color: crimson;
+  border-radius: 20px;
+}
+.user-dashboard .contact {
+  margin: 0px 00px 000px 00px;
+  font-size: xx-large;
+}
+
+# for user library #
+.foruser {
+  background-size: cover;
+  background-image: url(./image/forusers.jpeg);
+}
+#notavl {
+  color: maroon;
+}
+
+# for confirmbook to be issue #
+.confirm {
+  background-image: url(./image/confirm.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.confirm h1 {
+  margin: 30px;
+  font-size: xx-large;
+}
+.confirm button {
+  border: 5px solid brown;
+  border-radius: 20px;
+}
+.confirm button:hover {
+  color: red;
+  background-color: black;
+}
+
+# for errorpage #
+.error {
+  background-image: url(./image/error404.jpeg);
+  background-size: cover;
+}
+.error h1 {
+  font-size: 100px;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: black;
+}
+.error #page {
+  font-size: 70px;
+  font-style: italic;
+  color: black;
+}
+.error button {
+  border: 5px solid black;
+  border-radius: 15px;
+  margin: 0 0 0 1100px;
+  font-size: larger;
+}
+.error button:hover,
+.error a:hover {
+  background-color: aqua;
+  color: red;
+}
+
+# for searchpage #
+.searchadmin td,
+.searchadmin h1 {
+  color: black;
+}
+.searchuser td,
+.searchuser h1 {
+  color: black;
+}
+
+# for category #
+.category {
+  background-image: url(./image/category.jpeg);
+}
+.category .cat {
+  margin: 50px 50px 20px 50px;
+}
+.category img {
+  height: 400px;
+  width: 300px;
+  padding: 40px;
+  margin: 0 0 0 0;
+}
+.category #ca {
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 0 0 0 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+.category #ch {
+  text-align: center;
+  font-size: xx-large;
+  color: black;
+}
+.category h2 {
+  color: black;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+# for footer #
+.footer {
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: auto;
+  text-align: center;
+}
+.footer #fp,
+.footer #fa {
+  color: black;
+  font-size: larger;
+  text-align: center;
+  background-color: white;
+}
+
+
+
+
+# Media query for screens smaller than 768px #
+@media only screen and (max-width: 768px) {
+  # Adjustments for smaller screens #
+  .admin form,
+  .addbook form,
+  .updatebook form,
+  .login form,
+  .register form {
+    margin: 20px;
+  }
+  .mainn {
+    margin: 20px auto;
+    width: 90%;
+  }
+  .user-dashboard #logout {
+    margin: 10px auto;
+  }
+  # Add other adjustments as needed #
+}
+
+# Media query for screens between 768px and 1024px #
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  # Adjustments for medium-sized screens #
+  .admin form,
+  .addbook form,
+  .updatebook form,
+  .login form,
+  .register form {
+    margin: 50px;
+  }
+  .mainn {
+    margin: 20px auto;
+    width: 70%;
+  }
+  .user-dashboard #logout {
+    margin: 10px auto;
+  }
+  # Add other adjustments as needed #
+}
+
+# Media query for screens larger than 1024px #
+@media only screen and (min-width: 1024px) {
+  # Adjustments for larger screens #
+  .admin form,
+  .addbook form,
+  .updatebook form,
+  .login form,
+  .register form {
+    margin: 80px 500px;
+  }
+  .mainn {
+    margin: 20px 700px;
+  }
+  .user-dashboard #logout {
+    margin: 10px 100px 0px 1300px;
+  }
+  # Add other adjustments as needed #
+} */
+
+
+.wrapper .pass-field {
+  position: relative;
+}
+.pass-field i {
+  right: 55px;
+  top: 50%;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.content {
+  display: none;
+}
+.content .requirement-list {
+  margin: 10px 20px 10px 1px;
+}
+.content .requirement-list #cnt {
+  color: black;
+}
+.requirement-list li {
+  font-size: xx-small;
+  list-style: none;
+  display: inline-block;
+}
+.requirement-list li span {
+  margin-left: 10px;
+  color: red;
+}
+.requirement-list li.valid span {
+  color: rgb(18, 183, 106);
+}

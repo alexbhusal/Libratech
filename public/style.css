@@ -1,0 +1,61 @@
+.admin {
+    background-image: url(./image/admin.jpeg);
+    background-size: cover;
+  }
+  .admin-dashboard {
+    background-size: cover;
+  }
+  #ckbox {
+    width: 25px;
+    height: 25px;
+  }
+
+  .user_wrap .pass-field {
+    position: relative;
+  }
+  .pass-field #pi {
+    right: 40px;
+    top: 50%;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+.user-dashboard {
+  background-image: url(./image/home.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+.wrapper .pass-field {
+  position: relative;
+}
+.pass-field i {
+  right: 30px;
+  font-size: larger;
+  top: 70%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.content {
+  display: none;
+}
+.content .requirement-list {
+  margin: 10px 20px 10px 1px;
+}
+.content .requirement-list #cnt {
+  color: white;
+}
+.requirement-list li {
+  font-size: 17px;
+  list-style: none;
+  display: inline-block;
+}
+.requirement-list li span {
+  margin-left: 10px;
+  color: red;
+}
+.requirement-list li.valid span {
+  color: rgb(18, 183, 106);
+}
