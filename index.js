@@ -3,7 +3,7 @@ const expressHBS = require('express-handlebars');
 const morgan = require('morgan');
 const bodyParser= require('body-parser');
 const session= require('express-session');
-const router = require("../router/index.router");
+const router = require("./router/index.router");
 const app = express();
 app.use(morgan('dev'));
 const port = 3000;
@@ -19,8 +19,8 @@ app.engine('hbs',hbs.engine);
 app.set('view engine','hbs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/static",express.static(__dirname+ "public"));
-app.use("/statics",express.static(__dirname+ "public/image"));
+app.use("/static",express.static(__dirname+ "/public"));
+app.use("/statics",express.static(__dirname+ "/public/image"));
 
 app.use(session({
   secret: 'alexbhusal',
@@ -33,7 +33,6 @@ app.use(session({
 
 app.use(router);
 
-
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something went wrong!');
@@ -41,7 +40,3 @@ app.use((err, req, res, next) => {
 app.listen(port,()=>{
     console.log(`http://localhost:${port}`);
 });
-
-module.exports = (req, res) => {
-  app(req, res); // Forward the request and response to the Express app
-};
