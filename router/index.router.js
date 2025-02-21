@@ -13,10 +13,10 @@ const connection = mysql.createConnection({
   // user: 'root',  
   // password: '',  
   // database: 'LMS'
-  host: 'b6bvos2hghgvsnlrqmer-mysql.services.clever-cloud.com',
-  user: 'use3disj1hdqiecj',  
-  password: 'tpnX5TaRsZAaO8INtlgg',  
-  database: 'b6bvos2hghgvsnlrqmer'
+  host: 'bmzvaf877wbbxka83t92-mysql.services.clever-cloud.com',
+  user: 'uqa9empnj15etxp9',  
+  password: 'Jeuvn0yDuyvHNDc89XbG',  
+  database: 'bmzvaf877wbbxka83t92'
 });
 connection.connect((error) => {
   if (!error) {
